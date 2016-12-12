@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
  // get weather info
   $.ajax({ 
 url: baseUrl + "/q/autoip.json", 
+headers: {"Content-Type":"application/json","Accept": "application/json" },
 dataType: "jsonp",
 data: "jsonp", 
 cache: 'false', 
